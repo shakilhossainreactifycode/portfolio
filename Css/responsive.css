@@ -1,0 +1,68 @@
+/* -----------------extra small device--------------- */
+@media (max-width: 575.98px) {
+   /* -------------nav bar start----------------- */
+#menu-bar{
+    width: 200px;
+    z-index: 100;
+    background: #081b29;
+   
+    
+}
+
+.main-menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  
+   
+   
+}
+.main-menu .waviy a{
+   font-size: 20px;
+   font-weight: 400;
+   color: #ededed;
+   font-family: 'Poppins', sans-serif;
+
+}
+.waviy {
+   position: relative;
+   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+   font-size: 60px;
+ }
+ .waviy span {
+   font-family: 'Alfa Slab One', cursive;
+   position: relative;
+   display: inline-block;
+   color: #fff;
+   text-transform: uppercase;
+   animation: waviy 1s infinite;
+   animation-delay: calc(.1s * var(--i));
+   
+ }
+ @keyframes waviy {
+   0%,40%,100% {
+     transform: translateY(0)
+   }
+   20% {
+     transform: translateY(-20px)
+   }
+ }
+.main-menu ul li a{
+   
+   font-size: 20px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   margin-left: 15px;
+   color: #ededed;
+   font-family: 'Poppins', sans-serif;
+   transition: all linear .3s;
+   
+}
+.main-menu ul li a:hover{
+   width: 30px;
+   border-radius: 20px;
+   color: rgb(145, 24, 243);
+   
+}
+/* -------------nav bar end-------------------- */ 
+}
